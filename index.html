@@ -16,10 +16,32 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./src/styles/cat.css">
 
+    <link rel="icon" href="./src/images/patinha.png">
+
+
     <title>MyPetCare</title>
 </head>
 
 <body>
+
+    <div class="menu-cat" onclick="toggleMenu()">
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#about_us">Sobre Nós</a></li>
+                <li><a href="#questions">Dúvidas?</a></li>
+            </ul>
+        </nav>
+    </div>
     <nav class="flex flex-space flex-align flex-padding nav-desktop">
         <div>
             <!-- Logo -->
@@ -246,6 +268,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("open");
+        }
+    </script>
 
 </body>
 
